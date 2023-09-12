@@ -1,0 +1,52 @@
+<!doctypehtml>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="rafaform.css">
+</head>
+<body>
+<header>
+	<a href="index.html"><img src="../imagem/home.png" width="30" height="30" /></a>
+	<h1>Área De Comentários</h1>
+	<h2>As informações tem unicamente o proposito de criar uma comunidade interativa!!</h2>
+</header>
+
+<form action="emprodução.html" method="post">
+	<fieldset>
+	<legend>Formulário</legend>
+	<p>
+	<label for="nome">Nome:</label>
+	<input type="text" name="nome" id="nome" Required pattern="[aA-zZ\s]+$" autofocus placeholder="Sem numeros.">
+	</p>
+	
+	<p>
+	<label for="email">Email:</label>
+	<input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+	</p>
+	
+	<p>
+	<label for="assuto">Assunto:</label>
+	<input type="text" name="assunto" id="assunto" Required placeholder="Exmplo:Como amolar faca curva." >
+	</p>
+	
+	<p>
+	<label for="texto>">Faça seu comentário aqui!!</label>
+	</p>
+	
+	<p>
+	<div class="comentario"><textarea name="texto" id="texto" placeholder="Insira seu conteudo em forma de texto, máximo de caracteres é 600." maxlength="600"></textarea></div>
+	</p>
+	
+	<p>
+	<input type="checkbox" name="checkbox"  id="checkbox" value="sim" Required /> 
+	<label for="contrato" id="checkbox">Possuo mais de 18 anos</label>
+	</p>
+	
+	<input type="submit" id="submit"  value="Enviar" Required>
+	</fieldset>
+</form>	
+</body>
+<footer>
+	<h2>Obrigado</h2>
+</footer>
+</html>
